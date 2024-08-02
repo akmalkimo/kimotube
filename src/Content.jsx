@@ -10,7 +10,7 @@ function Content(props){
     <div className="wrapper" ref={wrapperRef}>
     <BackToTopBttn />
         {
-            props.var1.map(element => <iframe src={`http://www.youtube.com/embed/${element}`} allowFullScreen key={element}></iframe>)
+            props.var1.map(element => <iframe src={`https://www.youtube.com/embed/${element}`} allowFullScreen key={element}></iframe>)
         }
     </div>
     </>
