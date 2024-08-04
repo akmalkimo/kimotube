@@ -1,5 +1,4 @@
 import React, { useRef } from "react"
-import BackToTopBttn from './BackToTopBttn'
 
 function Content(props){
 
@@ -8,7 +7,7 @@ function Content(props){
     return (
     <>
     <div className="wrapper" ref={wrapperRef}>
-    <BackToTopBttn />
+    <button className='backToTop'><a href="#">To top</a></button>
         {
             props.var1.map(element => <iframe src={`http://www.youtube.com/embed/${element}`} allowFullScreen key={element}></iframe>)
         }
