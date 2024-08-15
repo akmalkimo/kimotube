@@ -7,7 +7,6 @@ function Content(props){
     return (
     <>
     <div className="wrapper" ref={wrapperRef}>
-    <button className='backToTop'><a href="#">To top</a></button>
         {
             props.var1.map(element => <iframe src={`https://www.youtube.com/embed/${element}`} allowFullScreen key={element}></iframe>)
         }
